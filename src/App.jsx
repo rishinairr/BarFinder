@@ -128,3 +128,10 @@ function App() {
 }
 
 export default App;
+<a href="/map">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/81/81251.png"
+    alt="Search"
+    className="nav-icon"
+  />
+</a>
