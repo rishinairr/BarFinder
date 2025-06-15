@@ -14,6 +14,7 @@ body {
   background: #1a1a1a;
 }
 
+
 .header {
   padding: 1rem;
   display: flex;
@@ -67,7 +68,13 @@ body {
 .feed {
   flex: 1;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 300px; /* force minimum height */
+  padding-bottom: 5rem; /* Makes room for nav bar */
 }
+
 
 .post {
   border-bottom: 1px solid #333;

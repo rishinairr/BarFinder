@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Public");
-  const [hasFriends, setHasFriends] = useState(true); // Change to false to test empty state
+  const [hasFriends, setHasFriends] = useState(false); // Toggle this for testing
 
   const publicPosts = [
     {
@@ -11,7 +11,7 @@ function App() {
       location: "The Tipsy Tavern",
       time: "12m",
       content:
-        "Amazing night at The Tipsy Tavern! The 'Midnight Martini' hit 🔥🍸",
+        "Amazing night at The Tipsy Tavern! The 'Midnight Martini' was top notch.",
       image:
         "https://images.unsplash.com/photo-1603570419983-d8f30d0d1ff8?auto=format&fit=crop&w=600&q=80",
       likes: 23,
@@ -26,7 +26,7 @@ function App() {
           user: "Sophia Mitchell",
           location: "The Gilded Grape",
           time: "1h",
-          content: "Wine night at The Grape 🍷✨ perfect vibes",
+          content: "Wine night at The Gilded Grape — perfect vibes and great ambiance.",
           likes: 12,
           comments: 3,
           shares: 0,
@@ -48,7 +48,9 @@ function App() {
         <div className="post-content">{post.content}</div>
         {post.image && <img className="post-image" src={post.image} alt="" />}
         <div className="post-reactions">
-          ❤️ {post.likes}   💬 {post.comments}   🔁 {post.shares}
+          <span>❤️ {post.likes}</span>
+          <span>💬 {post.comments}</span>
+          <span>🔁 {post.shares}</span>
         </div>
       </div>
     ));
@@ -73,7 +75,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h2>BarHop 🍻</h2>
+        <h2>BarFinder</h2>
         <input className="search" placeholder="Search" />
       </header>
 
