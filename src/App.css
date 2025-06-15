@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #1a1a1a;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.search {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #2e2e2e;
+  color: #fff;
+  width: 50%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.tab-toggle {
+  display: flex;
+  background: #2e2e2e;
+  padding: 4px;
+  border-radius: 999px;
+  width: 90%;
+  max-width: 320px;
+}
+
+.tab {
+  flex: 1;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.feed {
+  flex: 1;
+  padding: 1rem;
+}
+
+.post {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.location,
+.time {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.post-content {
+  margin-bottom: 0.5rem;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+
+.post-reactions {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+}
+
+.empty-icon {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.invite-button {
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+  background: #1a1a1a;
+  position: sticky;
+  bottom: 0;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
