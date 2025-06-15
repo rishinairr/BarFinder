@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Public");
-  const [hasFriends, setHasFriends] = useState(false); // Toggle this for testing
+  const [hasFriends, setHasFriends] = useState(false); // Toggle for testing
 
   const publicPosts = [
     {
@@ -26,7 +26,8 @@ function App() {
           user: "Sophia Mitchell",
           location: "The Gilded Grape",
           time: "1h",
-          content: "Wine night at The Gilded Grape — perfect vibes and great ambiance.",
+          content:
+            "Wine night at The Gilded Grape — perfect vibes and great ambiance.",
           likes: 12,
           comments: 3,
           shares: 0,
@@ -60,7 +61,7 @@ function App() {
       return (
         <div className="empty-state">
           <img
-            src="https://www.svgrepo.com/show/527381/user.svg"
+            src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
             alt="No friends"
             className="empty-icon"
           />
